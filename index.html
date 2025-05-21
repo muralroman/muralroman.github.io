@@ -15,7 +15,13 @@
       color: #333;
       font-family: 'Inter', sans-serif;
       box-sizing: border-box;
-      overflow-x: hidden;
+      overflow: hidden !important;
+      overscroll-behavior: none !important;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE 10+ */
+    }
+    html::-webkit-scrollbar, body::-webkit-scrollbar {
+      display: none !important;
     }
     body {
       min-height: 100vh;
